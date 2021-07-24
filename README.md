@@ -8,7 +8,7 @@ To illustrate this, let's assume that we are a service provider (ABC Networks) w
 
 We are running ISIS IGP throughout our network core. 
 
-If we were to use an IP based network only, then P3 and P4 routers will also have to install customer prefix 10.1.1.0/24 and 20.1.1.0/24 in the routing table. Imagine, multiple customers connected to our PE routers. This will become difficult to scale our network. 
+If we were to use an IP based network only, then P3 and P4 routers will also have to install customer prefix 10.1.1.0/24 and 20.1.1.0/24 in the routing table. Imagine multiple customers connected to our PE routers. This will become difficult to scale our network. 
 
 Let us now introduce MPLS to our network to avoid installing customer prefixes throughout our core network. In Cisco IOS XE, we would need to - 
 
