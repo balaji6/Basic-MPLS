@@ -146,7 +146,7 @@ Peer LDP Identifier: 3.3.3.3:0
     IPv6: (0)
 ```
 
-As we can see, these are TCP sessions to port 646. 
+As we can see, these are TCP sessions to port 646. The source and destination IP for this TCP session would be the loopback 1 IP of the respective routers that were specified in the configuration. 
 
 Ok, the next step is to verify what labels we have received from our LDP neighbors. Let's check this on PE1. 
 
