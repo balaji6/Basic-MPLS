@@ -242,6 +242,12 @@ S        20.1.1.2 [1/0] via 2.2.2.2
 Note that P3 does not have route to 20.1.1.2 and that is fine. Because the forwarding is based on only MPLS labels. When PE1 sends the packet with a label of 16, P3 is going to pop that label and send it to 23.1.1.2 (to PE2) as per the MPLS table. 
 
 ```
+P3#show ip route 20.1.1.2
+% Network not in table
+```
+
+
+```
 P3#show mpls forwarding-table 
 Local      Outgoing   Prefix           Bytes Label   Outgoing   Next Hop    
 Label      Label      or Tunnel Id     Switched      interface              
