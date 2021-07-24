@@ -4,3 +4,4 @@ One of the important use case for using MPLS in Service Provider networks is tha
 
 To illustrate this, consider the below topology owned by a service provider (ABC Networks). 
 
+![](images/1.png)
