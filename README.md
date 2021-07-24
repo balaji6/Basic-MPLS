@@ -2,13 +2,13 @@
 
 One of the important use case for using MPLS in Service Provider networks is that the Intermedite/Provider (P) routers need not have the whole IPv4/IPv6 routes in their routing table. Instead, they only need to have labels to reach the remote end PE (Provider Edge) routers. 
 
-To illustrate this, let's assume that we are a service provider (ABC Networks) where our customer needs reachability betwen CE1 and CE2. 
+To illustrate this, let's assume that we are a service provider and our customer needs reachability betwen CE1 and CE2. 
 
 ![](images/1.png)
 
 We are running ISIS IGP throughout our network core. 
 
-If we were to use an IP based network only, then P3 and P4 routers will also have to install customer prefix 10.1.1.0/24 and 20.1.1.0/24 in the routing table. Imagine multiple customers connected to our PE routers. This will become difficult to scale our network. 
+If we were to use an IP based network only, then P3 and P4 routers will also have to install customer prefix 10.1.1.0/24 and 20.1.1.0/24 in the routing table. Imagine multiple customers connected to our PE routers and sending 1000s of prefixes. This will make our network extremely difficult to scale. 
 
 Let us now introduce MPLS to our network to avoid installing customer prefixes throughout our core network. In Cisco IOS XE, we would need to - 
 
